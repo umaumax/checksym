@@ -11,6 +11,11 @@ wget https://gist.githubusercontent.com/mlafeldt/3885346/raw/2ee259afd8407d635a9
 clang -std=c11 checksym.c -I. -include ./c_decls.h -include is_elf.h
 ```
 
+`sample.o`
+```
+wget 'https://github.com/alexanderhofstaetter/htl-stp-archive/blob/master/Projekte/RF-ID%20(4J-HWE-Tillich)/Code/RFID-Reader/Builds/reader.o?raw=true' -o sample.o
+```
+
 * [Installing Elf on Mac through homebrew \- Ask Different]( https://apple.stackexchange.com/questions/276307/installing-elf-on-mac-through-homebrew )
 * [elf\.h for OSX]( https://gist.github.com/mlafeldt/3885346 )
 
