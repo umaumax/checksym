@@ -187,10 +187,12 @@ static int readelf(char *filename, char *head) {
     return (1);
   }
 
+#ifdef ELF_CLASS
   if (ehdr->e_ident[EI_CLASS] != ELF_CLASS) {
     fprintf(stderr, "unknown class. (%d)\n", (int)ehdr->e_ident[EI_CLASS]);
     return (1);
   }
+#endif
 
   switch (ehdr->e_ident[EI_DATA]) {
     case ELFDATA2MSB:
