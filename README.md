@@ -2,6 +2,9 @@
 
 go port of checksym
 
+input: obj file
+output: unused variables or functions list
+
 ## how to install
 ```
 WIP
